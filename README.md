@@ -89,3 +89,19 @@ The application follows a **modular architecture** with clear separation of conc
 - Media processing tools (**FFmpeg**) for potential chart exports
 
 ---
+
+## 🚀 Deployment Strategy
+
+### 🧪 Development Environment
+- **Runtime:** Python 3.11 with automatic dependency installation
+- **Execution:** Single command launch via workflow configuration
+
+### 🏭 Production Considerations
+- **Scalability:** Single-threaded design suitable for personal trading simulation
+- **Monitoring:** CSV logging provides audit trail for performance analysis
+- **Extensibility:** Modular design allows easy strategy modifications
+
+### ⚙️ Configuration Management
+- **Parameters:** Hardcoded defaults with easy modification points
+- **Environment:** Self-contained setup with minimal external requirements
+- **Data Storage:** Local CSV files for trade history persistence
