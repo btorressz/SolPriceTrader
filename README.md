@@ -69,3 +69,23 @@ The application follows a **modular architecture** with clear separation of conc
 6. **Logging:** Trade details recorded to CSV for analysis.
 
 ---
+
+
+## 📦 External Dependencies
+
+### 🧰 Core Dependencies
+- **requests:** HTTP client for Jupiter API integration
+- **matplotlib:** Real-time charting and visualization
+- **numpy:** Numerical calculations and data processing
+
+### 🌐 Jupiter API Integration
+- **Endpoint:** `https://quote-api.jup.ag/v6/quote`
+- **Rate Limiting:** 1-second minimum intervals between requests
+- **Slippage:** 0.5% default tolerance for realistic pricing
+
+### ⚙️ System Dependencies (via Nix)
+- Python 3.11 runtime environment
+- Graphics libraries (**Cairo**, **GTK3**) for matplotlib rendering
+- Media processing tools (**FFmpeg**) for potential chart exports
+
+---
