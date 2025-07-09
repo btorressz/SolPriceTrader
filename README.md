@@ -58,3 +58,14 @@ The application follows a **modular architecture** with clear separation of conc
 - **Design:** Reusable components to avoid code duplication
 
 ---
+
+## 🔄 Data Flow
+
+1. **Price Collection:** Jupiter API fetched every 30 seconds for SOL/USDC quotes.
+2. **Strategy Evaluation:** New prices compared against 20-period moving average.
+3. **Trade Execution:** Buy/sell decisions based on mean reversion signals.
+4. **Portfolio Update:** Cash and holdings adjusted with slippage costs.
+5. **Visualization:** Charts updated with new price data and trade markers.
+6. **Logging:** Trade details recorded to CSV for analysis.
+
+---
