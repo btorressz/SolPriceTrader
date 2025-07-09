@@ -27,3 +27,34 @@ The application follows a **modular architecture** with clear separation of conc
 - Helper functions for calculations and formatting
 
 ---
+
+## 🗂️ Key Components
+
+### 🔗 1. Data Fetching (`data_fetcher.py`)
+- **Purpose:** Integrates with Jupiter API to fetch SOL/USDC price quotes
+- **Implementation:** RESTful API calls with rate limiting (1-second intervals)
+- **Configuration:** Uses SOL and USDC mint addresses for accurate pricing
+- **Error Handling:** Includes retry logic and graceful degradation
+
+### ⚙️ 2. Trading Simulator (`trading_simulator.py`)
+- **Purpose:** Main orchestrator implementing mean reversion strategy
+- **Strategy:** Buys when price is below moving average, sells when above
+- **Parameters:** Configurable MA period (default 20), fetch interval (30s), slippage (0.1%)
+- **Logging:** CSV file generation for trade history and analysis
+
+### 💼 3. Portfolio Management (`portfolio.py`)
+- **Purpose:** Tracks cash balance, SOL holdings, and calculates P&L
+- **Features:** Cost basis tracking, position sizing, and performance metrics
+- **Risk Management:** Validates trades against available cash/holdings
+
+### 📈 4. Visualization (`visualizer.py`)
+- **Purpose:** Real-time **matplotlib** charts for monitoring trading activity
+- **Charts:** Price/MA overlay with trade markers, cumulative P&L tracking
+- **Updates:** Live chart updates with new data points
+
+### 🔧 5. Utilities (`utils.py`)
+- **Purpose:** Common calculations and formatting functions
+- **Functions:** Moving averages, currency formatting, percentage calculations
+- **Design:** Reusable components to avoid code duplication
+
+---
