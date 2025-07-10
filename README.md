@@ -105,3 +105,5 @@ The application follows a **modular architecture** with clear separation of conc
 - **Parameters:** Hardcoded defaults with easy modification points
 - **Environment:** Self-contained setup with minimal external requirements
 - **Data Storage:** Local CSV files for trade history persistence
+
+  ---
