@@ -107,3 +107,7 @@ The application follows a **modular architecture** with clear separation of conc
 - **Data Storage:** Local CSV files for trade history persistence
 
   ---
+
+  ## 🧾📜 LICENSE
+  - This project is under the **MIT LICENSE**
+  
