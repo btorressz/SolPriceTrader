@@ -108,6 +108,12 @@ The application follows a **modular architecture** with clear separation of conc
 
   ---
 
+
   ## 🧾📜 LICENSE
   - This project is under the **MIT LICENSE**
+
+     ---
+
+  
+
   
