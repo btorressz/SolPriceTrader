@@ -114,6 +114,9 @@ The application follows a **modular architecture** with clear separation of conc
 
      ---
 
+    ## 📸 Screenshots
+
+
   
 
   
