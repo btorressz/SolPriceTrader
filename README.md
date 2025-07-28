@@ -118,6 +118,10 @@ The application follows a **modular architecture** with clear separation of conc
 
     ![SolPriceTrader](https://github.com/btorressz/SolPriceTrader/blob/main/SolPriceTrader.jpg)
 
+
+    ![SolPriceTrader](https://github.com/btorressz/SolPriceTrader/blob/main/SolPriceTrader1.jpg)
+
+
          ---
 
 
